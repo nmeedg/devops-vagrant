@@ -1,0 +1,91 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Ma page web</title>
+        <link rel="stylesheet" href="biblio.css" />
+    </head>
+    <body>
+        <nav>
+            <h1 class="logo">BIBLIO LE SAGE</h1>
+            <div>
+                <a href="" class="active">emprunts</a>
+                <a href=""> retours</a>
+                <a href=""> Livres</a>
+                <a href=""> Membres</a>
+            </div>
+        </nav>
+        <div class="mybody">
+            <div>
+                <h3>Ajout d'un nouvel emprunts</h3>
+                <hr />
+
+                <form action="">
+                    <div>
+                        <label for="">Livre : </label>
+                        <select name="" id="">
+                            <option>Selectionner un libre</option>
+                            <option value="">Livre1</option>
+                            <option value="">livre2</option>
+                            <option value="">Livre3</option>
+                        </select>
+                    </div>
+                    <div>
+                        <label for="">Emprunteur : </label>
+                        <select name="" id="">
+                            <option>Selectionner un membre</option>
+                            <option value="">emprunteur1</option>
+                            <option value="">emprunteur2</option>
+                            <option value="">emprunteur3</option>
+                        </select>
+                    </div>
+                    <div>
+                        <label for="">Date de retour : </label>
+                        <input type="date" name="" id="" />
+                    </div>
+
+                    <div class="form-validate">
+                        <button>Annuler</button>
+                        <button>Enregistrer</button>
+                    </div>
+                </form>
+            </div>
+            <div>
+                <div class="thead">Liste des Livres</div>
+                <table>
+                    <thead>
+                        <td>Titre</td>
+                        <td>Auteur</td>
+                        <td>Disponible</td>
+                    </thead>
+                    <tr>
+                        <td>UML2 par</td>
+                        <td>pascal Roquers</td>
+                        <td>03</td>
+                    </tr>
+                    <tr>
+                        <td>comrendre Merise</td>
+                        <td>patrick</td>
+                        <td>04</td>
+                    </tr>
+                    <tr>
+                        <td>UML pour les dev</td>
+                        <td>pascal</td>
+                        <td class="action">indisponible</td>
+                    </tr>
+                    <tr>
+                        <td>UML 140 exercices</td>
+                        <td>pascal</td>
+                        <td>02</td>
+                    </tr>
+                    <tr>
+                        <td>De Merise a UML</td>
+                        <td>patrick</td>
+                        <td class="action">indisponible</td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </body>
+</html>

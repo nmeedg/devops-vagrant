@@ -1,0 +1,2 @@
+vagrant box add (url_vers_la box_sans_fichier_vox) --box-version 2019... (sans la lettre v)
+sans oublier la commande vagrant validate pour verifier la conformite du vagrantfile

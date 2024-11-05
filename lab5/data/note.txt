@@ -1,0 +1,2 @@
+sed -i 's/PasswordAuthentication no/PasswordAuthentication yes/' sshd_config
+'s/PermitRootLogin prohibit-password/PermitRootLogin yes/' sshd_config

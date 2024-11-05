@@ -1,0 +1,34 @@
+# -*- mode: ruby -*-
+# vi: set ft=ruby :
+
+Vagrant.configure("2") do |config|
+
+  config.vm.define "admin" do |admin|
+    admin.vm.box = "mydebian"
+    #admin.vm.box_version = "2004.01"
+    admin.vm.hostname = "admin"
+    admin.vm.network "private_network", ip:"192.168.56.4"
+    admin.vm.provider "virtualbox" do |vb|
+      # Display the VirtualBox GUI when booting the machine
+      # vb.gui = true
+      vb.cpus = "1"
+      # Customize the amount of memory on the VM:
+      vb.memory = "1024"
+    end
+
+  end
+  config.vm.define "node" do |alpine|
+    alpine.vm.box = "generic/alpine318"
+    alpine.vm.box_version = "4.3.12"
+    alpine.vm.hostname = "node"
+    alpine.vm.network "private_network", ip:"192.168.56.5"
+    alpine.vm.provider "virtualbox" do |vba|
+      # Display the VirtualBox GUI when booting the machine
+      # vb.gui = true
+      vba.cpus = "1"
+      # Customize the amount of memory on the VM:
+      vba.memory = "400"
+    end
+
+  end
+end

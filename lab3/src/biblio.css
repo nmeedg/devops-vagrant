@@ -1,0 +1,131 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: Sans-Serif;
+}
+body {
+  background-color: rgba(0,0,0,0.075);
+}
+nav {
+    background-color: black;
+    padding: 0 2rem;
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    padding-top: 1.5rem;
+}
+.logo{
+    color: white;
+    width: 40%;
+    vertical-align: center;
+    padding-bottom: 1rem;
+}
+nav div {
+    width: 60%;
+    display: flex;
+    justify-content: space-between;
+}
+nav div a {
+  text-decoration: none;
+  color: white;
+  text-transform: capitalize;
+  transition-duration: 0.5s;
+}
+a:hover {
+  color: orange;
+  transform: scale(1.2);
+}
+nav a.active {
+  color: orange;
+  font-weight: bold;
+}
+nav a.active::after {
+  content:"";
+  height: 5px;
+  display: block;
+  width: 100%;
+  background-color: orange;
+  margin-top: 1rem;
+}
+.mybody {
+  padding: 2rem 1.5rem;
+  display: flex;
+  justify-content: space-around;
+  align-items: start;
+}
+h3 {
+  text-transform: uppercase;
+  padding: 0 1rem;
+}
+form {
+  margin-top: 1rem;
+  width: 100%;
+}
+form div {
+  padding-bottom: 0.7rem;
+}
+form label {
+  display: block;
+}
+form select, input[type="date"] {
+  width: 100%;
+  margin-top: 0.3rem;
+  padding: 0.4rem 0.6rem;
+  border-radius: 5px;
+}
+.action{
+    color: red;
+}
+
+hr {
+  height: 3px;
+  background-color: orange;
+  margin-top: 0.5rem;
+  color: orange;
+}
+.form-validate button {
+  color: orange;
+  background-color: black;
+  border: none;
+  font-weight: bold;
+  border-radius: 5px;
+  padding: 0.5rem 1.5rem;
+}
+button:hover {
+  color: white;
+  background-color: orange;
+}
+.form-validate {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 1rem;
+}
+.thead {
+  text-transform:uppercase;
+  text-align: center;
+  color: white;
+  background-color: black;
+  padding: 0.75rem 0;
+  margin-bottom: 0.5rem;
+  font-weight: bold;
+  vertical-align: center;
+  text-align: center;
+}
+thead {
+  font-weight: bold;
+  border: 3px black solid;
+}
+table {
+  border: 3px black solid;
+  border-collapse: collapse;
+  border-bottom: 1px black solid;
+}
+
+td {
+  border: 1px black solid;
+  padding: 0.5rem 0.7rem;
+}
+table tr td:nth-child(3) {
+  font-weight: bold;
+}
